@@ -64,6 +64,7 @@ header{
 
 @media (max-width: 700px){
     header{
+        position: fixed;
         width: 100%;
     }
 
@@ -86,9 +87,11 @@ header{
         clip-path: circle(0 at center);
         transition: .6s;
         z-index: 10;
+        height: 30vh;
     }
 
     .nav__input:checked + .nav__menu{
+        height: 30vh;
         clip-path: circle(100% at center);
     }
 
@@ -106,12 +109,14 @@ header{
     }
 
     .hero__titulo{
+        display: block;
+        margin-top: 200px;
         font-size: 2.4em;
         color: #050404;
 
     }
 
     .hero__img{
-    
+       margin: auto;
     }
 }
